@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name='regdurations',
     packages=find_packages(include=['regdurations']),
-    version='1.0.2',
+    version='1.0.3',
     python_requires='>=3.9',
     extras_require={
         'find_relativedelta': ['dateutil']
