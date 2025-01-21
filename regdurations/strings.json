@@ -1,0 +1,20 @@
+{
+    "en": {
+        "seconds": ["s", "second", "seconds"],
+        "minutes": ["m", "min", "minute", "minutes"],
+        "hours": ["h", "hour", "hours"],
+        "days": ["d", "day", "days"],
+        "weeks": ["w", "week", "weeks"],
+        "months": ["month", "months"],
+        "years": ["y", "year", "years"]
+    },
+    "it": {
+        "seconds": ["s", "secondo", "secondi"],
+        "minutes": ["m", "min", "minuto", "minuti"],
+        "hours": ["h", "o", "ora", "ore"],
+        "days": ["g", "gg", "giorno", "giorni"],
+        "weeks": ["sett", "settimana", "settimane"],
+        "months": ["mese", "mesi"],
+        "years": ["anno", "anni"]
+    }
+}
