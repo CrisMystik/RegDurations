@@ -4,6 +4,7 @@
 #  https://www.boost.org/LICENSE_1_0.txt)
 
 import re
+from typing import Union
 from .languages import Languages, DURATION_VALUES
 
 __all__ = ['Languages', 'VALID_KEYS', 'DurationParser']
@@ -11,7 +12,7 @@ __all__ = ['Languages', 'VALID_KEYS', 'DurationParser']
 VALID_KEYS = ('seconds', 'minutes', 'hours', 'days', 'weeks', 'months', 'years')
 
 class DurationParser:
-    def __init__(self, allowed_languages: list[str] = None):
+    def __init__(self, allowed_languages: Union[list[str], None] = None):
         self.allowed_patterns = {}
         all_patterns = set()
 
