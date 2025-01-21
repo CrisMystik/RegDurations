@@ -21,8 +21,9 @@ duration_parser.find_dict('4s 23gg 78 settimane')
 * `EN`, `IT`, `FR`, `DE`, `ES`
 * Contributions for new languages are accepted
 
-## Credits
-Thanks to [CalledLuca](https://github.com/CalledLuca) for the idea and the `FR`, `DE`, `ES` languages!
+## Credits and contact
+* Thanks to [CalledLuca](https://github.com/CalledLuca) for the idea and the `FR`, `DE`, `ES` languages!
+* For any question you can try to **contact** me on [Telegram](https://t.me/CrisMystik).
 
 ## License
 This project is licensed under the **Boost Software License**. Please take a look.

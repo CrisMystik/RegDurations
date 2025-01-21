@@ -3,17 +3,12 @@
 # (See accompanying file LICENSE_1_0.txt or copy at
 #  https://www.boost.org/LICENSE_1_0.txt)
 
-from importlib import resources
-import json
 import re
+from .languages import Languages, DURATION_VALUES
 
-__all__ = ['DurationParser']
+__all__ = ['Languages', 'VALID_KEYS', 'DurationParser']
 
 VALID_KEYS = ('seconds', 'minutes', 'hours', 'days', 'weeks', 'months', 'years')
-
-with resources.open_text('regdurations', 'strings.json', encoding='utf-8') as f:
-    DURATION_VALUES = json.load(f)
-    SUPPORTED_LANGUAGES = DURATION_VALUES.keys()
 
 class DurationParser:
     def __init__(self, allowed_languages: list[str] = None):
