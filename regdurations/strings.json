@@ -5,7 +5,7 @@
         "hours": ["h", "hour", "hours"],
         "days": ["d", "day", "days"],
         "weeks": ["w", "week", "weeks"],
-        "months": ["month", "months"],
+        "months": ["mo", "month", "months"],
         "years": ["y", "year", "years"]
     },
     "it": {
@@ -15,6 +15,34 @@
         "days": ["g", "gg", "giorno", "giorni"],
         "weeks": ["sett", "settimana", "settimane"],
         "months": ["mese", "mesi"],
-        "years": ["anno", "anni"]
+        "years": ["a", "anno", "anni"]
+    },
+
+    "fr": {
+        "seconds": ["s", "seconde", "secondes"],
+        "minutes": ["m", "min", "minute", "minutes"],
+        "hours": ["h", "heure", "heures"],
+        "days": ["j", "jour", "jours"],
+        "weeks": ["sem", "semaine", "semaines"],
+        "months": ["mois"],
+        "years": ["an", "année", "années", "ans"]
+    },
+    "es": {
+        "seconds": ["s", "segundo", "segundos"],
+        "minutes": ["m", "min", "minuto", "minutos"],
+        "hours": ["h", "hora", "horas"],
+        "days": ["d", "día", "días"],
+        "weeks": ["sem", "semana", "semanas"],
+        "months": ["mes", "meses"],
+        "years": ["a", "año", "años"]
+    },
+    "de": {
+        "seconds": ["s", "sekunde", "sekunden"],
+        "minutes": ["m", "min", "minute", "minuten"],
+        "hours": ["h", "stunde", "stunden"],
+        "days": ["t", "tag", "tage"],
+        "weeks": ["w", "woche", "wochen"],
+        "months": ["mo", "monat", "monate"],
+        "years": ["j", "jahr", "jahre"]
     }
 }
