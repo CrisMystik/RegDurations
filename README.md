@@ -2,6 +2,12 @@
 
 This library allows to simply parse durations written in a string, in multiple supported languages.
 
+## Install
+Run:
+```
+pip install https://github.com/CrisMystik/RegDurations/archive/master.zip --force-reinstall
+```
+
 ## Usage
 ``` python
 from regdurations import DurationParser
