@@ -41,14 +41,14 @@ class DurationParser:
         for match in matches:
             if (not match) or (not match.group().strip()):
                 break
+            if match.group(3):
+                continue
+
             if first is None:
                 first = match.start()
             if (last is not None) and (match.start() != last):
                 break
             last = match.end()
-
-            if match.group(3):
-                continue
 
             match_type = next(
                 (k for k, v in self.allowed_patterns.items() if match.group(2).lower() in v), None
