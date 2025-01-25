@@ -41,14 +41,16 @@ class DurationParser:
         for match in matches:
             if (not match) or (not match.group().strip()):
                 break
+
+            if (last is not None) and (match.start() != last):
+                break
+            last = match.end()
+
             if match.group(3):
                 continue
 
             if first is None:
                 first = match.start()
-            if (last is not None) and (match.start() != last):
-                break
-            last = match.end()
 
             match_type = next(
                 (k for k, v in self.allowed_patterns.items() if match.group(2).lower() in v), None
@@ -58,7 +60,7 @@ class DurationParser:
 
             result[match_type] += int(match.group(1))
 
-        return result, first, last
+        return result, first, (last if first is not None else None)
 
     def find_relativedelta(self, text: str) -> tuple['relativedelta', Union[int, None], Union[int, None]]:
         raise ModuleNotFoundError('dateutil module not available')
