@@ -53,6 +53,8 @@ class DurationParser:
             match_type = next(
                 (k for k, v in self.allowed_patterns.items() if match.group(2).lower() in v), None
             )
+            if match_type is None:
+                continue
 
             result[match_type] += int(match.group(1))
 
