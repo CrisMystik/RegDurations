@@ -5,7 +5,7 @@ This library allows to simply parse durations written in a string, in multiple s
 ## Install
 Run:
 ```
-pip install https://github.com/CrisMystik/RegDurations/archive/master.zip --force-reinstall
+pip install regdurations
 ```
 
 ## Usage
