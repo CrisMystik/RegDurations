@@ -1,0 +1,37 @@
+[project]
+name = "regdurations"
+version = "1.0.5"
+authors = [
+  { name="CrisMystik" },
+]
+description = "Parse user-provided duration strings using regular expressions"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Typing :: Typed",
+    "Intended Audience :: Developers",
+    "Development Status :: 5 - Production/Stable",
+
+    # Supported Languages:
+    "Natural Language :: English",
+    "Natural Language :: Italian",
+    "Natural Language :: French",
+    "Natural Language :: Spanish",
+    "Natural Language :: German"
+]
+license = "BSL-1.0"
+license-files = ["LICENSE_1_0.txt"]
+
+[project.optional-dependencies]
+find_relativedelta = ["python-dateutil"]
+
+[project.urls]
+Homepage = "https://github.com/CrisMystik/RegDurations"
+Issues = "https://github.com/CrisMystik/RegDurations/issues"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
