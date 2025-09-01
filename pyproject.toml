@@ -8,7 +8,6 @@ description = "Parse user-provided duration strings using regular expressions"
 readme = "README.md"
 requires-python = ">=3.9"
 classifiers = [
-    "License :: OSI Approved :: Boost Software License 1.0 (BSL-1.0)",
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
     "Typing :: Typed",
