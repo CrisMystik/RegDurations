@@ -10,10 +10,10 @@ from .languages import Languages, DURATION_VALUES, VALID_KEYS, SEP_WORD_KEY
 __all__ = ['Languages', 'VALID_KEYS', 'DurationParser']
 
 class DurationParser:
-    def __init__(self, allowed_languages: Union[list[str], None] = None):
-        self.allowed_patterns = {}
-        sep_words = []
-        all_patterns = set()
+    def __init__(self, allowed_languages: Union[list[str], None] = None) -> None:
+        self.allowed_patterns: dict[str, set[str]] = {}
+        sep_words: list[str] = []
+        all_patterns: set[str] = set()
 
         for lang, lang_patterns in DURATION_VALUES.items():
             if (allowed_languages is not None) and (lang not in allowed_languages):
@@ -34,8 +34,8 @@ class DurationParser:
 
     def find_dict(self, text: str) -> tuple[dict[str, int], Union[int, None], Union[int, None]]:
         matches = [m for m in self.regex.finditer(text) if m]
-        first = None
-        last = None
+        first: int | None = None
+        last: int | None = None
         result = {k: 0 for k in VALID_KEYS}
 
         for match in matches:
